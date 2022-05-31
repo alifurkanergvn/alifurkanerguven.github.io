@@ -10,3 +10,30 @@ body{
   text-align:center;
   background: #222;
 }
+
+img {
+    
+    max-width: 100%;
+  }
+
+
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: 0.3; 
+    -webkit-filter: blur(15px);
+      -moz-filter: blur(15px);
+      -o-filter: blur(15px);
+      -ms-filter: blur(15px);
+      filter: blur(15px);
+  }
+
+  .title-block span {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
