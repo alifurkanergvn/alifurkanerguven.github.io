@@ -44,18 +44,18 @@
     <script src="/js/template.js"></script>
 </head>
 
-<body data-target=".navbar" data-offset="44" data-spy="scroll">
+<body data-bs-target="#navbar_scroll" data-offset="44" data-bs-spy="scroll">
     <!-- start codes -->
     
 
     <!-- navbar start -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
         <!-- Container wrapper -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="navbar_scroll">
                 <a class="navbar-brand" href="#">ALI FURKAN ERGUVEN</a>
 
             <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_id" 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#slide01" 
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -79,9 +79,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#slide05">My Work</a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link" href="#slide06">Testimonials</a>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
                     <a class="nav-link" href="#slide07">Contact Me</a>
                   </li>
@@ -95,228 +95,222 @@
         </div>
 
         
-      </nav> 
-
+    </nav> 
     <!-- navbar end -->
 
     <!-- header start -->
     <video width="100%" height=auto autoplay muted loop id="myVideo">
         <source src="images/myVideo.mp4" type="video/mp4">
     </video>
+
+    <div class="container" id="slide01">    
+        <div class="row">    
+            <div class="row justify-content-center " >
+               <div class="col-md-8 pt-3 mt-3">
+                    <span class="welcome-first " >Hello, welcome to my</span>
+                    <h1 class="welcome-title " >UNIVERSE</h1>
+                    <p class="animatee" >I am a software developer. You can have a lot of information about me by viewing this website. Do not forget to contact us for cooperation and information. We are waiting for you...</p>
+                    <div class="scroll-down mt-5" ><img src="images/mouse-scroll.png" alt=""><p>Scroll Down</p></div>
+                    <div class="bosluk"></div>
+                </div>
+            </div>                
+        </div>
+    </div>
     <!-- header end -->
 
     <!-- main start -->
-    <div class="container">
-    
-            <div class="row">
-    
-                <div class="row justify-content-center  position-relative" style="height:100vh;"  id="slide01">
-                    
-                        <div class="col-lg-8  position-absolute top-50 ">
-                            <span class="welcome-first animate" data-animate="fadeInUp">Hello, welcome to my</span>
-                            <h1 class="welcome-title animate" data-animate="fadeInUp">UNIVERSE</h1>
-                            <p class="animate" data-animate="fadeInUp">I am a software developer. You can have a lot of information about me by viewing this website. Do not forget to contact us for cooperation and information. We are waiting for you...</p>
-                            <!-- <div class="scroll-down next-section animate data-animate="fadeInUp""><img src="images/mouse-scroll.png" alt=""><span>Scroll Down</span></div> -->
-                            <div class="pb-5"></divc>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="section animated-row" id="slide02">
-                <div class="section-inner">
-                    <div class="about-section">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 wide-col-laptop mb-5">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="about-contentbox">
-                                            <div class="animate" data-animate="fadeInUp">
-                                                <span>About Me</span>
-                                                <h2>Who am I?</h2>
-                                                <p>Credits go to <strong>Unsplash</strong> and <strong>Pexels</strong> for photos and video used in this template. Vivamus tincidunt, augue rutrum convallis volutpat, massa lacus tempus leo.</p>
-                                            </div>
-    
-                                            <div class="col-md-6 mt-2">
-                                                <div class="counter-box">
-                                                    <i class="fa-solid fa-people-group" ></i><span class="count-number">6</span> Team Members
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-md-6 mt-3">
-                                                <div class="counter-box">
-                                                    <i class="fa fa-certificate counter-icon" aria-hidden="true"></i><span class="count-number">10</span> Certificates
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <figure class="about-img animate" data-animate="fadeInUp"><img src="images/me.jpg"  class="rounded-3" alt=""></figure>
-                                    </div>
+    <section id="slide02">
+        <div class="container">       
+            <div class="row justify-content-center ">
+                <div class="row col-md-9">
+                    <div class=" col-md-6 ">
+                        <span>About Me</span>
+                        <h2>Who am I?</h2>
+                        <p>Welcome again. I am Electrical and Electronics Engineer. Currently I am working at Turkcell Group Company Atmosware. Software has been a passion for me since college. 
+                            I decided that working on it and improving myself would make me happier. I had entered  bootcamps where have professional instructors and still continue to improving myself every day.   </p>
+                        <div class="row  col-md-9">
+                            <div class=" col-md-6 mt-2">
+                                <div class="counter-box">
+                                    <i class="fa-solid fa-people-group fa-xl" ></i><span class="count-number">3</span> Team Members
+                                </div>
+                            </div> 
+                            <div class="col-md-6 mt-2">
+                                <div class="counter-box">
+                                    <i class="fa fa-certificate counter-icon fa-xl" aria-hidden="true"></i><span class="count-number">5</span> Certificates
                                 </div>
                             </div>
+                            
                         </div>
+                    </div>
+                    <div class="class col-md-6 ">
+                        <figure class="about-img animate" data-animate="fadeInUp"><img src="images/me.jpg"  class="rounded-3" alt=""></figure>
                     </div>
                 </div>
             </div>
-    
-             <div class="section animated-row" id="slide03">
-                    <div class="section-inner">
-                        <div class="row justify-content-center">
-                            <div class="col-md-8 wide-col-laptop">
-                                <div class="title-block animate" data-animate="fadeInUp">
-                                    <span>Services</span>
-                                    <h2>What I Do?</h2>
-                                </div>
-                                <div class="services-section">
-                                    <div id="carouselExampleFade" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                          <div class="carousel-item active">
-                                            <span class="service-icon"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
-                                            <h3>Bootstrap Themes</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <span class="service-icon"><i class="fa fa-cloud" aria-hidden="true"></i></span>
-                                            <h3>HTML5 Coding</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <span class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
-                                                <h3>Fully Responsive</h3>
-                                                <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <span class="service-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
-                                            <h3>Mobile Ready</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <span class="service-icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
-                                                <h3>Fast Support</h3>
-                                                <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <span class="service-icon"><i class="fa fa-database" aria-hidden="true"></i></span>
-                                                <h3>24-hour Up Time</h3>
-                                                <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <span class="service-icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
-                                                <h3>Instant Upgrades</h3>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <span class="service-icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
-                                                <h3>Always Monitoring</h3>
-                                                <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
-                                          </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                          <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                          <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <div class="section animated-row" id="slide04">
-                <div class="row justify-content-center">
-                    <div class="col-md-7 m-5">
-                        <div class="title-block span">
-                            <span>My Skills</span>
-                            <h2>What I'M GOOD?</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8 offset-md-2">   
-                                <div class="skill-item">
-                                    <h6>HTML CSS</h6>
-                                    <div class="skill-bar">
-                                        <span>70%</span>
-                                        <div class="filled-bar"></div>
-                                    </div>          
-                                </div>
-                                <div class="skill-item">
-                                    <h6>PSD Design</h6>
-                                    <div class="skill-bar">
-                                        <span>90%</span>
-                                        <div class="filled-bar-2"></div>
-                                    </div>          
-                                </div>
-                                <div class="skill-item">
-                                    <h6>Social Media</h6>
-                                    <div class="skill-bar">
-                                        <span>70%</span>
-                                        <div class="filled-bar"></div>
-                                    </div>          
-                                </div>
-                                <div class="skill-item last-skill">
-                                    <h6>Leadership</h6>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%; background-color:#7B365E; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                      </div>          
-                                </div>                   
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-            </div>
-            <div class="section animated-row" id="slide05">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 m-5 mx-auto">
-                        <div class="title-block span">
-                            <span>My Work</span>
-                            <h2>What I've done?</h2>
-                        </div>
+        </div>
+    </section>    
 
-                                <div class="row ">
-                                    <div class="col-md-4 ">
-                                        <div class="card" style="width: 15rem;">
-                                            <img class="card-img-top" src="./images/cardResim.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                           
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card" style="width: 15rem;">
-                                            <img class="card-img-top" src="./images/cardResim.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                           
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card" style="width: 15rem;">
-                                            <img class="card-img-top" src="./images/cardResim.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                           
-                                    </div>
-                                
+
+    <section id="slide03">
+        <div class="container">
+            <div class="row justify-content-center" >
+                    <div class="col-md-8 mt-5 pt-5">
+                        <div class="title-block animate" >
+                            <span>Services</span>
+                            <h2>What I Do?</h2>
+                        </div>
+                        <div class="services-section">
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <span class="service-icon"><i class="fa fa-bookmark fa-xl" aria-hidden="true"></i></span>
+                                    <h3>Bootstrap Themes</h3>
+                                    <p>We can develop your Bootstrap Themes</p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <span class="service-icon"><i class="fa fa-cloud fa-xl" aria-hidden="true"></i></span>
+                                    <h3>Java Coding</h3>
+                                    <p>We are giving professional servis for your projects</p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <span class="service-icon"><i class="fa fa-desktop fa-xl" aria-hidden="true"></i></span>
+                                        <h3>Fully Responsive</h3>
+                                        <p>Our websites can available all devices.  </p>
+                                  </div>
+            
+                                  <div class="carousel-item">
+                                    <span class="service-icon"><i class="fa fa-comments fa-xl" aria-hidden="true"></i></span>
+                                        <h3>Fast Support</h3>
+                                        <p>We are solving your problem as soon as possible everytime. </p>
+                                  </div>                                  
+                                  <div class="carousel-item">
+                                    <span class="service-icon"><i class="fa fa-bell fa-xl" aria-hidden="true"></i></span>
+                                        <h3>Instant Upgrades</h3>
+                                        <p>We are always updated to optimize our system</p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <span class="service-icon"><i class="fa fa-camera fa-xl" aria-hidden="true"></i></span>
+                                        <h3>Always Monitoring</h3>
+                                        <p></p>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>   
                         </div>
                     </div>
-                </div>
             </div>
-            <div class="section animated-row" id="slide06">
-                <div class="row justify-contet-center">
+        </div>
+    </section>
+    
+    
+    <section id="slide04">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 mb-5 ">
+                    <div class="title-block span">
+                        <span>My Skills</span>
+                        <h2>What I'M GOOD?</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">   
+                            <div class="skill-item ">
+                                <h6>Java</h6>
+                                <div class="skill-bar">
+                                    <span>80%</span>
+                                    <div class="progress">                                    
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%; background-color:#7B365E; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>          
+                            </div>
+                            <div class="skill-item mt-3">
+                                <h6>Spring Framewok</h6>
+                                <div class="skill-bar ">
+                                    <span>80%</span>
+                                    <div class="progress">                                    
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%; background-color:#7B365E; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>          
+                            </div>
+                            <div class="skill-item mt-3">
+                                <h6>Data Base Conrol</h6>
+                                <div class="skill-bar ">
+                                    <span>85%</span>
+                                    <div class="progress">                                    
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 85%; background-color:#7B365E; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>          
+                            </div>
+                            <div class="skill-item mt-3">
+                                <h6>HTML-CSS-Bootstrap</h6>
+                                <span>65%</span>
+                                <div class="progress">                                    
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 65%; background-color:#7B365E; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>          
+                            </div>                   
+                        </div>
+                    </div>        
+                </div>
+            </div>    
+        </div>
+    </section>
+            
+    
+    <section id="slide05">
+        <div class="container"> 
+            <div class="row justify-content-center">
+               <div class="col-md-8 m-5 mx-auto">
+                    <div class="title-block span">
+                        <span>My Work</span>
+                        <h2>What I've done?</h2>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4 ">
+                            <div class="card-group" style="width: 15rem; height: 30rem;">
+                                <img class="card-img-top" src="/images/atmosware.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h6 class="card-title">Atmosware Software Company</h6>
+                                  <p class="card-text">I have completed bootcamp, where I learned the basics of writing quality and clean code with expert instructors</p>
+                                  <a href="https://www.atmosware.com.tr" class="btn btn-primary">For Details</a>
+                                </div>
+                            </div>                               
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-group" style="width: 15rem; height: 30rem;">
+                                <img class="card-img-top" src="./images/hrms.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h6 class="card-title">Human Resources Management System</h6>
+                                  <p class="card-text">I developed human resources management system software. Please click to button for details.</p>
+                                  <a href="https://github.com/alifurkanergvn/HrmsApp.V2.0" class="btn btn-primary">For Details</a>
+                                </div>
+                            </div>                               
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-group" style="width: 15rem; height: 30rem;">
+                                <img class="card-img-top" src="images/coding.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h6 class="card-title">Self Learning</h6>
+                                  <p class="card-text">Every day we should go one step forward. This repository includes different topics. Please click to button for details. </p>
+                                  <a href="https://github.com/alifurkanergvn/JAVA" class="btn btn-primary">For Details</a>
+                                </div>
+                            </div>                               
+                        </div>
+                    </div>                            
+                </div>                
+            </div>
+        </div> 
+    </section >
+       
+    
+    <!-- <section id="slide06">
+        <div class="container">
+            <div class="row justify-contet-center">
                     <div class="col-md-8 mx-auto m-5">
                         <div class="title-blok span">
                             <span>TESTIMONIALS</span>
@@ -366,72 +360,56 @@
                         </div>
                         
                     </div>
-                </div>
-                
             </div>
-    
-            <div class="section animated-row" id="slide07">
-                <div class="section-inner">
-                    <div class="row justify-content-center">
-                        <div class="col-md-7 wide-col-laptop">
-                            <div class="title-block animate" data-animate="fadeInUp">
-                                <span>Contact</span>
-                                <h2>Get In Touch!</h2>
-                            </div>
-                            <div class="contact-section">
-                                <div class="row">
-                                    <div class="col-md-6 animate" data-animate="fadeInUp">
-                                        <div class="contact-box">
-                                            <div class="contact-row">
-                                                <i class="fa fa-map-marker"></i> 123 New Street Here, Wonderful City 10220
-                                            </div>
-                                            <div class="contact-row">
-                                                <i class="fa fa-phone"></i> 090 080 0210
-                                            </div>
-                                            <div class="contact-row">
-                                                <i class="fa fa-envelope"></i> info@company.co
-                                            </div>
-                                        </div>
+        </div> 
+    </section> -->
+    <!-- main end -->
+
+    <!-- footer start -->
+    <section id="slide07">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 m-4 p-4">
+                    <div class="title-block animate" data-animate="fadeInUp">
+                        <span>Contact</span>
+                        <h2>Get In Touch!</h2>
+                    </div>
+                    <div class="contact-section">
+                        <div class="row">
+                            <div class="col-md-6 animate" data-animate="fadeInUp">
+                                <div class="contact-box mt-2">
+                                    <div class="contact-row">
+                                        <i class="fa fa-map-marker"></i> Selcuklu/KONYA 
                                     </div>
-                                    <div class="col-md-6 animate" data-animate="fadeInUp">
-                                        <form id="ajax-contact" method="post" action="#">
-                                            <div class="input-field">
-                                                <input type="text" class="form-control" name="name" id="name" required placeholder="Name">
-                                            </div>
-                                            <div class="input-field">
-                                                <input type="email" class="form-control" name="email" id="email" required placeholder="Email">
-                                            </div>
-                                            <div class="input-field">
-                                                <textarea class="form-control" name="message" id="message" required placeholder="Message"></textarea>
-                                            </div>
-                                            <button class="btn" type="submit">Submit</button>
-                                        </form>
-                                        <div id="form-messages" class="mt-3"></div>
+                                    <div class="contact-row">
+                                        <i class="fa fa-phone"></i> +90 554 269 6726
+                                    </div>
+                                    <div class="contact-row">
+                                        <i class="fa fa-envelope"></i> alifurkanerguven@gmail.com
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-6 animate" data-animate="fadeInUp">
+                                <form id="ajax-contact" method="post" action="#">
+                                    <div class="input-field">
+                                        <input type="text" class="form-control" name="name" id="name" required placeholder="Name">
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="email" class="form-control" name="email" id="email" required placeholder="Email">
+                                    </div>
+                                    <div class="input-field">
+                                        <textarea class="form-control" name="message" id="message" required placeholder="Message"></textarea>
+                                    </div>
+                                    <button class="btn-primary btn-border-primary " id="submitButton" type="submit">Submit</button>
+                                </form>
+                                <div id="form-messages" class="mt-3"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        
-
-    
-    
         </div>
-    </div>
-
-
-
-        
-        
-
-    
-
-    
-    <!-- main end -->
-
-    <!-- footer start -->
+    </section>
     <!-- footer end -->
 
 

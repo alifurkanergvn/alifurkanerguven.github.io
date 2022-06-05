@@ -5,7 +5,7 @@
 }
 
 body{
-    font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
+  font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
   color: #fff;
   text-align:center;
   background: #222;
@@ -36,22 +36,24 @@ video {
   span {
     font-size: 24px;
     text-transform: uppercase;
-    font-weight: 300;
-    margin-top: 50%;
+    /* font-weight: 300; */
+    
     
   }
 
-  h1,
+
+h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5
+{
   line-height: 1.2;
   margin: 0 0 20px;
   font-weight: 600;
   text-transform:uppercase;
 }
+
 h1,
 h2 {
   font-size: 32px;
@@ -84,8 +86,71 @@ h6 {
 
 .card{
     background-color: black;
+
 }
 
-.contact-row{
-    margin-bottom: 10%;
+.contact-row,.input-field{
+    margin-bottom: 5%;
 }
+
+.navbar{
+  opacity: .7;
+}
+
+/*==============================================
+04. WELCOME BLOCK CSS
+================================================*/
+.welcome-first{
+  font-size: 32px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-top: 30%;
+}
+
+.welcome-title{
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.animatee{
+  font-size:larger ;
+  
+}
+
+.bosluk{
+  margin: 50% ;
+}
+
+.scroll-down{
+  margin-top: 10%;
+}
+
+#submitButton{
+  border-radius: 25%; 
+  width: 22rem;
+}  
+
+/*==============================================
+05. SERVİCES BLOCK CSS
+================================================*/
+
+.services-section{
+  margin-bottom: 15%;
+}
+
+
+/*==============================================
+05. MY WORK BLOCK CSS
+================================================*/
+.card{
+  
+  /* object-fit: fill; */
+  /* min-width: 50ch; */
+  height: calc(100% - 15px);
+  margin-bottom: 15px;
+
+}
+
